@@ -1,0 +1,6 @@
+framework module Pods_AzurLaneTests {
+  umbrella header "Pods-AzurLaneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
