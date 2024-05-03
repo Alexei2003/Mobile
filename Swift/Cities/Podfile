@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+platform :ios, '13.2'
+
+target 'Cities' do
+  pod 'SDWebImage', '5.3'
+  pod 'SDWebImageSwiftUI', '1.2.0'
+  pod 'Firebase', '6.32.0'
+  pod 'Firebase/Auth', '~> 6.32.0'          # Аутентификация
+  pod 'Firebase/Core', '~> 6.32.0'          # Основной модуль Firebase (обычно включен   автоматически)
+  pod 'Firebase/Database', '~> 6.32.0'      # База данных Realtime Database
+  pod 'Firebase/Firestore', '~> 6.32.0'     # База данных Cloud Firestore
+  pod 'Firebase/Storage', '~> 6.32.0'       # Облачное хранилище
+  pod 'Firebase/Analytics', '~> 6.32.0'     # Аналитика
+  pod 'Firebase/RemoteConfig', '~> 6.32.0'  # Удаленная конфигурация
+  pod 'Firebase/Functions', '~> 6.32.0'     # Функции в облаке
+
+  use_frameworks!
+
+  # Pods for Cities
+
+  target 'CitiesTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CitiesUITests' do
+    # Pods for testing
+  end
+
+end
