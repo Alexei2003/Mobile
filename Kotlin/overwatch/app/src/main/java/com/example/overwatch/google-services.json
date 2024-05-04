@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "874211422364",
+    "firebase_url": "https://azur-lane-87bfe-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "azur-lane-87bfe",
+    "storage_bucket": "azur-lane-87bfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874211422364:android:8ca7b9a536730cac90bd59",
+        "android_client_info": {
+          "package_name": "com.example.azurlane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCsyOkCXDTykhdySsMHH3OmUWTlHheDKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

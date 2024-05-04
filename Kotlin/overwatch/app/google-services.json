@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "531545069895",
+    "firebase_url": "https://overwatch-95808-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "overwatch-95808",
+    "storage_bucket": "overwatch-95808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531545069895:android:e7e654dd9ef01679215462",
+        "android_client_info": {
+          "package_name": "com.example.overwatch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo6Ey7vhV_cwOYu0iiboXAb9EbAb-qyrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
