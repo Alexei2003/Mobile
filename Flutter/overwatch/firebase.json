@@ -1,0 +1,31 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "overwatch-95808",
+          "appId": "1:531545069895:android:e7e654dd9ef01679215462",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "overwatch-95808",
+          "configurations": {
+            "android": "1:531545069895:android:e7e654dd9ef01679215462",
+            "ios": "1:531545069895:ios:06e56dcba23542f4215462",
+            "macos": "1:531545069895:ios:06e56dcba23542f4215462",
+            "web": "1:531545069895:web:341db9efb1d65661215462",
+            "windows": "1:531545069895:web:e8e07bde4de1ee29215462"
+          }
+        }
+      }
+    }
+  },
+  "database": {
+    "rules": "(database.rules.json)"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
