@@ -1,4 +1,4 @@
-package com.example.azurlane
+package com.example.cities
 
 import android.app.Activity
 import android.content.Intent
@@ -11,7 +11,6 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
-import com.example.azurlane.activity.UserProfileActivity
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

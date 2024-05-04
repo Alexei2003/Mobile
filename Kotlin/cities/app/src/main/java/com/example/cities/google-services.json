@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1050690965435",
+    "firebase_url": "https://cities-99401-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "cities-99401",
+    "storage_bucket": "cities-99401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050690965435:android:2e3dce9b183695e3053e9e",
+        "android_client_info": {
+          "package_name": "com.example.cities"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8rEL1b1oWVCEvesh-aDFFf7YnlovIzK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

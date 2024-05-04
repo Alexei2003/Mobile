@@ -1,10 +1,9 @@
-package com.example.azurlane.activity
+package com.example.cities.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -15,23 +14,24 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.azurlane.ConstantsCustom
-import com.example.azurlane.ControllsFunc
-import com.example.azurlane.RealtimeDataBaseData
-import com.example.azurlane.ui.theme.AzurLaneTheme
+import com.example.cities.ConstantsCustom
+import com.example.cities.ControllsFunc
+import com.example.cities.RealtimeDataBaseData
+import com.example.cities.ui.theme.CitiesTheme
 import com.google.firebase.auth.FirebaseAuth
 
 class UserProfileActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AzurLaneTheme {
+            CitiesTheme {
                 val scrollState = rememberScrollState()
 
                 Surface(
@@ -42,7 +42,7 @@ class UserProfileActivity : ComponentActivity() {
                         modifier = Modifier
                             .fillMaxSize()
                             .verticalScroll(scrollState),
-                        verticalArrangement = Arrangement.Center,
+                        verticalArrangement = Arrangement.Top,
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Column(
@@ -51,6 +51,10 @@ class UserProfileActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.Start
                         ) {
                             Button(
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
+                                    contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                ),
                                 onClick = {
                                     ControllsFunc.GetUserDataAndNavigateActivity(
                                         this@UserProfileActivity,
@@ -62,7 +66,7 @@ class UserProfileActivity : ComponentActivity() {
                             }
                         }
 
-                        Text("Профиль пользователя")
+                        Text("Профиль города", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
 
                         Row(
                             modifier = Modifier,
@@ -79,7 +83,8 @@ class UserProfileActivity : ComponentActivity() {
 
                             Text(
                                 text = RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Name
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                    ?: ConstantsCustom.TEXT_NO_DATA,
+                                color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
 
                             Spacer(modifier = Modifier.weight(0.5f))
@@ -100,55 +105,55 @@ class UserProfileActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.Start
                         ) {
 
-                            Text("Construction")
+                            Text("Region", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Construction
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Region
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Rarity")
+                            Text("District", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Rarity
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.District
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Classification")
+                            Text("Founded", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Classification
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Founded
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Faction")
+                            Text("Area", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Faction
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Area
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Class")
+                            Text("Elevation", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Class
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Elevation
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Voice Actor")
+                            Text("Population", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.VoiceActor
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Population
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("Illustrator")
+                            Text("TimeZone", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.Illustrator
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.TimeZone
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("LimitBreak1")
+                            Text("PostalCode", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.LimitBreak1
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.PostalCode
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("LimitBreak2")
+                            Text("AreaCode", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.LimitBreak2
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.AreaCode
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
-                            Text("LimitBreak3")
+                            Text("LicensePlate", color = ConstantsCustom.CONTROLL_TEXT_COLOR)
                             Text(
-                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.LimitBreak3
-                                    ?: ConstantsCustom.TEXT_NO_DATA
+                                RealtimeDataBaseData.Users[RealtimeDataBaseData.selectedUserId]?.LicensePlate
+                                    ?: ConstantsCustom.TEXT_NO_DATA, color = ConstantsCustom.CONTROLL_TEXT_COLOR
                             )
                         }
 
@@ -161,6 +166,10 @@ class UserProfileActivity : ComponentActivity() {
 
                         if (RealtimeDataBaseData.selectedUserId == RealtimeDataBaseData.actualUserId) {
                             Button(
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
+                                    contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                ),
                                 onClick = {
                                     startActivity(
                                         Intent(
@@ -170,10 +179,14 @@ class UserProfileActivity : ComponentActivity() {
                                     )
                                 }
                             ) {
-                                Text("Изменить даные пользователя")
+                                Text("Изменить даные города")
                             }
 
                             Button(
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
+                                    contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                ),
                                 onClick = {
                                     // Получение объекта FirebaseAuth
                                     val auth = FirebaseAuth.getInstance()

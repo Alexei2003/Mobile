@@ -29,7 +29,7 @@ private let URL_NO_MAIN_IMAGE = "https://firebasestorage.googleapis.com/v0/b/ove
 private let URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/ProgramImage%2Fpng-transparent-abort-delete-cancel-icon-cross-no-access-denied.png?alt=media&token=b3cd70fd-c0cc-44a5-9218-889ec51c895f"
 private let URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/ProgramImage%2Fpng-clipart-computer-icons-graphics-symbol-plus-minus-share-icon-black-and-white.png?alt=media&token=50791534-6e3e-4514-8348-db93763d9ce1"
 
-private let FIELDS = ["Роль","HP","Броня","Сложность","Возраст","Национальность","Род занятий","Оперативная база","Отношения","Принадлежность"]
+private let FIELDS = ["Role","HP","Armor","Difficult","Age","Nationality","Occupation","Operational base","Relationships","Affiliation"]
 
 private let USER_FAVOURITE = "Favourite"
 private let USER_MAIN_IMAGE = "MainImage"
