@@ -275,6 +275,7 @@ public class UserProfilePage : ContentPage
     protected override bool OnBackButtonPressed()
     {
         ProgramData.UsersData = FirebaseRealtimeDataBase.GetAllUsers();
-        return false;
+        Navigation.PushAsync(new ObjectListPage());
+        return true;
     }
 }
