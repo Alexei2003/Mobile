@@ -6,6 +6,8 @@ import 'package:overwatch/firebase_options.dart';
 import 'package:overwatch/Screens/LogScreen.dart';
 import 'package:overwatch/Screens/SingScreen.dart';
 
+import '../Constan.dart';
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Главное окно'),
+        title: Text('Главное окно',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
       ),
       body: Center(
         child: Column(
@@ -32,23 +34,25 @@ class MainScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => LogScreen()),
                 );
               },
-              child: Text('Вход'),
+              child: Text('Вход',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
             ),
             SizedBox(height: 20), // Пространство между кнопками
             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SingScreen()),
                 );
               },
-              child: Text('Регистрация'),
+              child: Text('Регистрация',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
             ),
           ],
         ),

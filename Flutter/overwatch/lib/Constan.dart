@@ -1,10 +1,15 @@
+import 'package:flutter/material.dart';
+
 class Constant {
   static const String TEXT_NO_DATA = "No data";
   static const String TEXT_BUTTON_SAVE = "Сохранить";
   static const String USER_NAME = "Name";
   static const String USERS = "Users";
 
-  static const String URL_NO_MAIN_IMAGE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2F1674365401_3-42.jpeg?alt=media&token=387ea341-b6b7-47fe-b8f5-195e331f26a4";
-  static const String URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2FVgcbIXGQAaM.jpg?alt=media&token=acb8a5e2-beb7-47e4-b36e-89363190e59a";
-  static const String URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2Fkisspng-computer-icons-5aecbeb931d576.2757012415254647612041.jpg?alt=media&token=91572263-85a4-4b75-aa03-3c9b924fbf93";
+  static const String URL_NO_MAIN_IMAGE = "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/ProgramImage%2Fno_skin.png?alt=media&token=da62aaa8-4551-4e1c-80d8-288570b913c3";
+  static const String URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/ProgramImage%2Fpng-transparent-abort-delete-cancel-icon-cross-no-access-denied.png?alt=media&token=b3cd70fd-c0cc-44a5-9218-889ec51c895f";
+  static const String URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/ProgramImage%2Fpng-clipart-computer-icons-graphics-symbol-plus-minus-share-icon-black-and-white.png?alt=media&token=50791534-6e3e-4514-8348-db93763d9ce1";
+
+  static const CONTROLL_COLOR = Colors.grey ;
+  static const CONTROLL_TEXT_COLOR =  Colors.yellow;
 }

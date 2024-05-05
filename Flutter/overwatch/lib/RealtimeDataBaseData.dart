@@ -42,16 +42,16 @@ class RealtimeDataBaseData {
 }
 
 class UserProfile {
-  String? construction;
-  String? rarity;
-  String? classification;
-  String? faction;
-  String? classField;
-  String? voiceActor;
-  String? illustrator;
-  String? limitBreak1;
-  String? limitBreak2;
-  String? limitBreak3;
+  String? role;
+  String? hp;
+  String? armor;
+  String? difficult;
+  String? age;
+  String? nationality;
+  String? occupation;
+  String? operationalBase;
+  String? relationships;
+  String? affiliation;
 
   String? name;
   String? mainImage;
@@ -59,16 +59,16 @@ class UserProfile {
   List<String?>? images;
 
   UserProfile({
-    this.construction,
-    this.rarity,
-    this.classification,
-    this.faction,
-    this.classField,
-    this.voiceActor,
-    this.illustrator,
-    this.limitBreak1,
-    this.limitBreak2,
-    this.limitBreak3,
+    this.role,
+    this.hp,
+    this.armor,
+    this.difficult,
+    this.age,
+    this.nationality,
+    this.occupation,
+    this.operationalBase,
+    this.relationships,
+    this.affiliation,
     this.name,
     this.mainImage,
     this.favourite,
@@ -77,16 +77,16 @@ class UserProfile {
 
   factory UserProfile.fromJson(Map<Object?, Object?> json) {
     return UserProfile(
-      construction: json['Construction'] as String?,
-      rarity: json['Rarity'] as String?,
-      classification: json['Classification'] as String?,
-      faction: json['Faction'] as String?,
-      classField: json['Class'] as String?,
-      voiceActor: json['VoiceActor'] as String?,
-      illustrator: json['Illustrator'] as String?,
-      limitBreak1: json['LimitBreak1'] as String?,
-      limitBreak2: json['LimitBreak2'] as String?,
-      limitBreak3: json['LimitBreak3'] as String?,
+      role: json['Role'] as String?,
+      hp: json['HP'] as String?,
+      armor: json['Armor'] as String?,
+      difficult: json['Difficult'] as String?,
+      age: json['Age'] as String?,
+      nationality: json['Nationality'] as String?,
+      occupation: json['Occupation'] as String?,
+      operationalBase: json['OperationalBase'] as String?,
+      relationships: json['Relationships'] as String?,
+      affiliation: json['Affiliation'] as String?,
       name: json['Name'] as String?,
       mainImage: json['MainImage'] as String?,
       favourite: (json['Favourite'] as Map<dynamic, dynamic>?)?.map<String, String?>(
@@ -99,16 +99,16 @@ class UserProfile {
 
   Map<String, dynamic> toJson() {
     return {
-      'Construction': construction,
-      'Rarity': rarity,
-      'Classification': classification,
-      'Faction': faction,
-      'Class': classField,
-      'VoiceActor': voiceActor,
-      'Illustrator': illustrator,
-      'LimitBreak1': limitBreak1,
-      'LimitBreak2': limitBreak2,
-      'LimitBreak3': limitBreak3,
+      'Role': role,
+      'HP': hp,
+      'Armor': armor,
+      'Difficult': difficult,
+      'Age': age,
+      'Nationality': nationality,
+      'Occupation': occupation,
+      'OperationalBase': operationalBase,
+      'Relationships': relationships,
+      'Affiliation': affiliation,
       'Name': name,
       'MainImage': mainImage,
       'Favourite': favourite,

@@ -5,17 +5,17 @@ import '../RealtimeDataBaseData.dart';
 
 class UserProfileSettingScreen extends StatelessWidget {
   // Контроллеры для полей ввода
-  final TextEditingController constructionController = TextEditingController();
-  final TextEditingController rarityController = TextEditingController();
-  final TextEditingController classificationController =
+  final TextEditingController roleController = TextEditingController();
+  final TextEditingController hpController = TextEditingController();
+  final TextEditingController armorController =
       TextEditingController();
-  final TextEditingController factionController = TextEditingController();
-  final TextEditingController classController = TextEditingController();
-  final TextEditingController voiceActorController = TextEditingController();
-  final TextEditingController illustratorController = TextEditingController();
-  final TextEditingController limitBreak1Controller = TextEditingController();
-  final TextEditingController limitBreak2Controller = TextEditingController();
-  final TextEditingController limitBreak3Controller = TextEditingController();
+  final TextEditingController difficultController = TextEditingController();
+  final TextEditingController ageController = TextEditingController();
+  final TextEditingController nationalityController = TextEditingController();
+  final TextEditingController occupationController = TextEditingController();
+  final TextEditingController operationalBaseController = TextEditingController();
+  final TextEditingController relationshipsController = TextEditingController();
+  final TextEditingController affiliationController = TextEditingController();
 
   final TextEditingController mainImageController = TextEditingController();
   final TextEditingController nameController = TextEditingController();
@@ -24,7 +24,7 @@ class UserProfileSettingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Настройки профиля'),
+        title: Text('Настройки профиля',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
       ),
       body: Center(
         child: Padding(
@@ -45,53 +45,53 @@ class UserProfileSettingScreen extends StatelessWidget {
                       obscureText: true,
                     ),
                     TextField(
-                      controller: constructionController,
-                      decoration: InputDecoration(labelText: 'Construction'),
+                      controller: roleController,
+                      decoration: InputDecoration(labelText: 'Role'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: rarityController,
-                      decoration: InputDecoration(labelText: 'Rarity'),
+                      controller: hpController,
+                      decoration: InputDecoration(labelText: 'HP'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: classificationController,
-                      decoration: InputDecoration(labelText: 'Classification'),
+                      controller: armorController,
+                      decoration: InputDecoration(labelText: 'Armor'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: factionController,
-                      decoration: InputDecoration(labelText: 'Faction'),
+                      controller: difficultController,
+                      decoration: InputDecoration(labelText: 'Difficult'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: classController,
-                      decoration: InputDecoration(labelText: 'Class'),
+                      controller: ageController,
+                      decoration: InputDecoration(labelText: 'Age'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: voiceActorController,
-                      decoration: InputDecoration(labelText: 'VoiceActor'),
+                      controller: nationalityController,
+                      decoration: InputDecoration(labelText: 'Nationality'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: illustratorController,
-                      decoration: InputDecoration(labelText: 'Illustrator'),
+                      controller: occupationController,
+                      decoration: InputDecoration(labelText: 'Occupation'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: limitBreak1Controller,
-                      decoration: InputDecoration(labelText: 'LimitBreak1'),
+                      controller: operationalBaseController,
+                      decoration: InputDecoration(labelText: 'OperationalBase'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: limitBreak2Controller,
-                      decoration: InputDecoration(labelText: 'LimitBreak2'),
+                      controller: relationshipsController,
+                      decoration: InputDecoration(labelText: 'Relationships'),
                       obscureText: true,
                     ),
                     TextField(
-                      controller: limitBreak3Controller,
-                      decoration: InputDecoration(labelText: 'LimitBreak3'),
+                      controller: affiliationController,
+                      decoration: InputDecoration(labelText: 'Affiliation'),
                       obscureText: true,
                     ),
                     TextField(
@@ -100,6 +100,7 @@ class UserProfileSettingScreen extends StatelessWidget {
                       obscureText: true,
                     ),
                     ElevatedButton(
+                      style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                       onPressed: () {
                         RealtimeDataBaseData.selectedUserId =
                             RealtimeDataBaseData.actualUserId;
@@ -108,23 +109,23 @@ class UserProfileSettingScreen extends StatelessWidget {
                             .users[RealtimeDataBaseData.actualUserId];
 
                         user?.name = nameController.text != ""? nameController.text: user?.name ?? Constant.TEXT_NO_DATA;
-                        user?.construction = constructionController.text != "" ? constructionController.text: user?.construction ?? Constant.TEXT_NO_DATA;
-                        user?.rarity = rarityController.text != "" ? rarityController.text: user?.rarity ?? Constant.TEXT_NO_DATA;
-                        user?.classification = classificationController.text != "" ? classificationController.text: user?.classification ?? Constant.TEXT_NO_DATA;
-                        user?.faction = factionController.text != "" ? factionController.text: user?.faction ?? Constant.TEXT_NO_DATA;
-                        user?.classField = classController.text != "" ? classController.text: user?.classField ?? Constant.TEXT_NO_DATA;
-                        user?.voiceActor = voiceActorController.text != "" ? voiceActorController.text: user?.voiceActor ?? Constant.TEXT_NO_DATA;
-                        user?.illustrator = illustratorController.text != "" ? illustratorController.text: user?.illustrator ?? Constant.TEXT_NO_DATA;
-                        user?.limitBreak1 = limitBreak1Controller.text != "" ? illustratorController.text: user?.limitBreak1 ?? Constant.TEXT_NO_DATA;
-                        user?.limitBreak2 = limitBreak2Controller.text != "" ? limitBreak2Controller.text: user?.limitBreak2 ?? Constant.TEXT_NO_DATA;
-                        user?.limitBreak3 = limitBreak3Controller.text != "" ? limitBreak3Controller.text: user?.limitBreak3 ?? Constant.TEXT_NO_DATA;
+                        user?.role = roleController.text != "" ? roleController.text: user?.role ?? Constant.TEXT_NO_DATA;
+                        user?.hp = hpController.text != "" ? hpController.text: user?.hp ?? Constant.TEXT_NO_DATA;
+                        user?.armor = armorController.text != "" ? armorController.text: user?.armor ?? Constant.TEXT_NO_DATA;
+                        user?.difficult = difficultController.text != "" ? difficultController.text: user?.difficult ?? Constant.TEXT_NO_DATA;
+                        user?.age = ageController.text != "" ? ageController.text: user?.age ?? Constant.TEXT_NO_DATA;
+                        user?.nationality = nationalityController.text != "" ? nationalityController.text: user?.nationality ?? Constant.TEXT_NO_DATA;
+                        user?.occupation = occupationController.text != "" ? occupationController.text: user?.occupation ?? Constant.TEXT_NO_DATA;
+                        user?.operationalBase = operationalBaseController.text != "" ? occupationController.text: user?.operationalBase ?? Constant.TEXT_NO_DATA;
+                        user?.relationships = relationshipsController.text != "" ? relationshipsController.text: user?.relationships ?? Constant.TEXT_NO_DATA;
+                        user?.affiliation = affiliationController.text != "" ? affiliationController.text: user?.affiliation ?? Constant.TEXT_NO_DATA;
                         user?.mainImage = mainImageController.text != "" ? mainImageController.text: user?.mainImage ?? Constant.TEXT_NO_DATA;
 
                         RealtimeDataBaseData.uploadActualUserToFirebase(user!);
 
                         Navigator.pop(context);
                       },
-                      child: Text('Сохранить '),
+                      child: Text('Сохранить',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                     ),
                   ],
                 );

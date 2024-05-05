@@ -21,7 +21,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Профиль пользователя'),
+          title: Text('Профиль пользователя',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
         ),
         body: Center(
           child: Padding(
@@ -46,7 +46,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                     ),
                     Text(RealtimeDataBaseData
                             .users[RealtimeDataBaseData.selectedUserId]?.name ??
-                        Constant.TEXT_NO_DATA),
+                        Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR, fontSize: 16)),
                     if (RealtimeDataBaseData.actualUserId !=
                         RealtimeDataBaseData.selectedUserId)
                       GestureDetector(
@@ -80,90 +80,107 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                   ],
                 ),
                 Expanded(
+                    child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: (RealtimeDataBaseData.users[RealtimeDataBaseData.selectedUserId]?.images?.length ?? 0),
+                    itemBuilder: (context,index){
+                      return Image.network(
+                        RealtimeDataBaseData
+                            .users[
+                        RealtimeDataBaseData.selectedUserId]
+                            ?.images?[index] ==
+                            Constant.TEXT_NO_DATA
+                            ? Constant.URL_NO_MAIN_IMAGE
+                            : RealtimeDataBaseData
+                            .users[
+                        RealtimeDataBaseData.selectedUserId]
+                            ?.images?[index] ??
+                            Constant.URL_NO_MAIN_IMAGE,
+                        width: 250,
+                        height: 250,
+                      );
+                    },
+                  )
+                ),
+                Expanded(
                   child: ListView.builder(
                       scrollDirection: Axis.vertical,
-                      itemCount: (RealtimeDataBaseData.users[RealtimeDataBaseData.selectedUserId]?.images?.length ?? 0) + 1,
+                      itemCount:  1,
                       itemBuilder: (context, index) {
-                        if(index == 0){
                           return Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(),
-                              Text("Construction"),
+                              Text(""),
+                              Text("Role",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.construction ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Rarity"),
+                                  ?.role ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("HP",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.rarity ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Classification"),
+                                  ?.hp ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Armor",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.classification ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Faction"),
+                                  ?.armor ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Difficult",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.faction ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Class"),
+                                  ?.difficult ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Age",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.classField ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("VoiceActor"),
+                                  ?.age ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Nationality",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.voiceActor ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Illustrator"),
+                                  ?.nationality ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Occupation",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.illustrator ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak1"),
+                                  ?.occupation ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("OperationalBase",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak1 ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak2"),
+                                  ?.operationalBase ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Relationships",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak2 ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak3"),
+                                  ?.relationships ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
+                              Text("Affiliation",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak3 ??
-                                  Constant.TEXT_NO_DATA),
+                                  ?.affiliation ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text(""),
                             ],
                           );
-                        }else{
-                          return Image.network(
-                            RealtimeDataBaseData
-                                .users[
-                            RealtimeDataBaseData.selectedUserId]
-                                ?.images?[index-1] ==
-                                Constant.TEXT_NO_DATA
-                                ? Constant.URL_NO_MAIN_IMAGE
-                                : RealtimeDataBaseData
-                                .users[
-                            RealtimeDataBaseData.selectedUserId]
-                                ?.images?[index-1] ??
-                                Constant.URL_NO_MAIN_IMAGE,
-                            width: 250,
-                            height: 250,
-                          );
-                        }
                       }),
                 ),
                 if (RealtimeDataBaseData.actualUserId ==
                     RealtimeDataBaseData.selectedUserId)
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -171,18 +188,19 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                             builder: (context) => UserProfileSettingScreen()),
                       );
                     },
-                    child: Text('Настройка профиля пользователя'),
+                    child: Text('Настройка профиля пользователя',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                   ),
                 if (RealtimeDataBaseData.actualUserId ==
                     RealtimeDataBaseData.selectedUserId)
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                     onPressed: () {
                       FirebaseAuth.instance.signOut();
                       Navigator.pop(context);
                       Navigator.pop(context);
                       Navigator.pop(context);
                     },
-                    child: Text('Выход'),
+                    child: Text('Выход',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                   ),
               ],
             ),

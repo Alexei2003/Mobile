@@ -3,6 +3,8 @@ import 'package:overwatch/Screens/ObjectListScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../Constan.dart';
+
 class LogScreen extends StatelessWidget {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final TextEditingController _emailController = TextEditingController();
@@ -12,7 +14,7 @@ class LogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Вход'),
+        title: Text('Вход',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
       ),
       body: Center(
         child: Column(
@@ -36,6 +38,7 @@ class LogScreen extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () async {
                 try {
                   UserCredential userCredential =
@@ -58,7 +61,7 @@ class LogScreen extends StatelessWidget {
                   Navigator.pop(context);
                 }
               },
-              child: Text('Вход'),
+              child: Text('Вход',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
             ),
           ],
         ),
