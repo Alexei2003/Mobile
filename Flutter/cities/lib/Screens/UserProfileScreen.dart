@@ -21,7 +21,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Профиль пользователя'),
+          title: Text('Профиль города',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
         ),
         body: Center(
           child: Padding(
@@ -90,56 +90,56 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(),
-                              Text("Construction"),
+                              Text("Region",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.construction ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Rarity"),
+                                  ?.region ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("District",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.rarity ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Classification"),
+                                  ?.district ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("Founded",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.classification ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Faction"),
+                                  ?.founded ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("Area",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.faction ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Class"),
+                                  ?.area ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("Elevation",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.classField ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("VoiceActor"),
+                                  ?.elevation ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("Population",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.voiceActor ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("Illustrator"),
+                                  ?.population ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("TimeZone",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.illustrator ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak1"),
+                                  ?.timeZone ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("PostalCode",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak1 ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak2"),
+                                  ?.postalCode ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("AreaCode",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak2 ??
-                                  Constant.TEXT_NO_DATA),
-                              Text("LimitBreak3"),
+                                  ?.areaCode ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
+                              Text("LicensePlate",style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
-                                  ?.limitBreak3 ??
-                                  Constant.TEXT_NO_DATA),
+                                  ?.licensePlate ??
+                                  Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                             ],
                           );
                         }else{
@@ -164,6 +164,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                 if (RealtimeDataBaseData.actualUserId ==
                     RealtimeDataBaseData.selectedUserId)
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -171,18 +172,19 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                             builder: (context) => UserProfileSettingScreen()),
                       );
                     },
-                    child: Text('Настройка профиля пользователя'),
+                    child: Text('Настройка профиля города',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                   ),
                 if (RealtimeDataBaseData.actualUserId ==
                     RealtimeDataBaseData.selectedUserId)
                   ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                     onPressed: () {
                       FirebaseAuth.instance.signOut();
                       Navigator.pop(context);
                       Navigator.pop(context);
                       Navigator.pop(context);
                     },
-                    child: Text('Выход'),
+                    child: Text('Выход',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                   ),
               ],
             ),

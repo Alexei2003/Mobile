@@ -18,7 +18,7 @@ class _ObjectListScreenState extends State<ObjectListScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Список персонажей'),
+          title: const Text('Список городов',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
         ),
         body: Center(
           child: Column(
@@ -64,7 +64,7 @@ class _ObjectListScreenState extends State<ObjectListScreen> {
                                 width: 50,
                                 height: 50,
                               ),
-                              Text(userProfile.name ?? Constant.TEXT_NO_DATA),
+                              Text(userProfile.name ?? Constant.TEXT_NO_DATA,style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
                               GestureDetector(
                                 onTap: () {
                                   setState(() {
@@ -98,6 +98,7 @@ class _ObjectListScreenState extends State<ObjectListScreen> {
                 ),
               ),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
                 onPressed: () {
                   RealtimeDataBaseData.selectedUserId =
                       RealtimeDataBaseData.actualUserId;
@@ -108,7 +109,7 @@ class _ObjectListScreenState extends State<ObjectListScreen> {
                         builder: (context) => UserProfileScreen()),
                   );
                 },
-                child: Text('Профиль пользователя'),
+                child: Text('Профиль пользователя',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
               ),
             ],
           ),

@@ -14,7 +14,7 @@ class SingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Регистрация'),
+        title: Text('Регистрация',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
       ),
       body: Center(
         child: Column(
@@ -45,6 +45,7 @@ class SingScreen extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () async {
                 try {
                   UserCredential userCredential =
@@ -60,16 +61,16 @@ class SingScreen extends StatelessWidget {
 
                   var userProfile = UserProfile();
                   userProfile.name = _nameController.text;
-                  userProfile.construction = Constant.TEXT_NO_DATA;
-                  userProfile.rarity = Constant.TEXT_NO_DATA;
-                  userProfile.classification = Constant.TEXT_NO_DATA;
-                  userProfile.faction = Constant.TEXT_NO_DATA;
-                  userProfile.classField = Constant.TEXT_NO_DATA;
-                  userProfile.voiceActor = Constant.TEXT_NO_DATA;
-                  userProfile.illustrator = Constant.TEXT_NO_DATA;
-                  userProfile.limitBreak1 = Constant.TEXT_NO_DATA;
-                  userProfile.limitBreak2 = Constant.TEXT_NO_DATA;
-                  userProfile.limitBreak3 = Constant.TEXT_NO_DATA;
+                  userProfile.region = Constant.TEXT_NO_DATA;
+                  userProfile.district = Constant.TEXT_NO_DATA;
+                  userProfile.founded = Constant.TEXT_NO_DATA;
+                  userProfile.area = Constant.TEXT_NO_DATA;
+                  userProfile.elevation = Constant.TEXT_NO_DATA;
+                  userProfile.population = Constant.TEXT_NO_DATA;
+                  userProfile.timeZone = Constant.TEXT_NO_DATA;
+                  userProfile.postalCode = Constant.TEXT_NO_DATA;
+                  userProfile.areaCode = Constant.TEXT_NO_DATA;
+                  userProfile.licensePlate = Constant.TEXT_NO_DATA;
 
                   RealtimeDataBaseData.uploadActualUserToFirebase(userProfile);
 
@@ -83,7 +84,7 @@ class SingScreen extends StatelessWidget {
                   Navigator.pop(context);
                 }
               },
-              child: Text('Регистрация'),
+              child: Text('Регистрация',style: TextStyle(color: Constant.CONTROLL_TEXT_COLOR)),
             )
           ],
         ),

@@ -1,10 +1,15 @@
+import 'package:flutter/material.dart';
+
 class Constant {
   static const String TEXT_NO_DATA = "No data";
   static const String TEXT_BUTTON_SAVE = "Сохранить";
   static const String USER_NAME = "Name";
   static const String USERS = "Users";
 
-  static const String URL_NO_MAIN_IMAGE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2F1674365401_3-42.jpeg?alt=media&token=387ea341-b6b7-47fe-b8f5-195e331f26a4";
-  static const String URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2FVgcbIXGQAaM.jpg?alt=media&token=acb8a5e2-beb7-47e4-b36e-89363190e59a";
-  static const String URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/azur-lane-87bfe.appspot.com/o/ProgramImage%2Fkisspng-computer-icons-5aecbeb931d576.2757012415254647612041.jpg?alt=media&token=91572263-85a4-4b75-aa03-3c9b924fbf93";
+  static const String URL_NO_MAIN_IMAGE = "https://firebasestorage.googleapis.com/v0/b/cities-99401.appspot.com/o/ProgramImage%2F3.jpg?alt=media&token=6feac294-d510-4f07-9e99-579ca375cf05";
+  static const String URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/cities-99401.appspot.com/o/ProgramImage%2F1.jpg?alt=media&token=9dbe570b-cefc-4581-a95c-2f6a6e6cdaef";
+  static const String URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/cities-99401.appspot.com/o/ProgramImage%2Fpng-transparent-commercial-building-skyscraper-buildings-building-photography-logo.png?alt=media&token=b892b4b0-bf83-4d31-b39f-602e5b6e8cae";
+
+  static const CONTROLL_COLOR = Colors.green ;
+  static const CONTROLL_TEXT_COLOR =  Colors.red;
 }
