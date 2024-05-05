@@ -47,8 +47,8 @@ public class ObjectListPage : ContentPage
             var mainImage = new Image()
             {
                 Source = user.Value.MainImage == ConstantCustom.TEXT_NO_DATA ? ConstantCustom.URL_NO_MAIN_IMAGE : user.Value.MainImage ?? ConstantCustom.URL_NO_MAIN_IMAGE,
-                WidthRequest = ConstantCustom.IMAGE_SIZE, // ”станавливаем ширину изображени€ в 200 пикселей
-                HeightRequest = ConstantCustom.IMAGE_SIZE // ”станавливаем высоту изображени€ в 150 пиксел
+                WidthRequest = ConstantCustom.IMAGE_SIZE,
+                HeightRequest = ConstantCustom.IMAGE_SIZE
             };
             horizontalStack.Add(mainImage);
 
@@ -57,7 +57,7 @@ public class ObjectListPage : ContentPage
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 TextColor = Color.FromRgb(255, 255, 255),
-                FontSize = 20,
+                FontSize = 18,
                 Text = user.Value.Name ?? ConstantCustom.TEXT_NO_DATA
             };
             horizontalStack.Add(name);
@@ -65,8 +65,8 @@ public class ObjectListPage : ContentPage
             var favouriteImage = new Image()
             {
                 Source = ProgramData.UsersData[ProgramData.ActualUserId].Favourite == null ? ConstantCustom.URL_NO_FAVOURITE : ProgramData.UsersData[ProgramData.ActualUserId].Favourite.ContainsKey(user.Key) ? ConstantCustom.URL_FAVOURITE : ConstantCustom.URL_NO_FAVOURITE,
-                WidthRequest = ConstantCustom.IMAGE_SIZE, // ”станавливаем ширину изображени€ в 200 пикселей
-                HeightRequest = ConstantCustom.IMAGE_SIZE, // ”станавливаем высоту изображени€ в 150 пиксел
+                WidthRequest = ConstantCustom.IMAGE_SIZE,
+                HeightRequest = ConstantCustom.IMAGE_SIZE,
                 BindingContext = user.Key,
             };
             var favouriteImageGestureRecognizer = new TapGestureRecognizer();

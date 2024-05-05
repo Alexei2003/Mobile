@@ -223,17 +223,19 @@ public class UserProfilePage : ContentPage
             Spacing = ConstantCustom.IMAGE_SIZE * 4f / 2,
         };
 
-        foreach (var imageURL in ProgramData.UsersData[ProgramData.SelectedUserId].Images)
+        if (ProgramData.UsersData[ProgramData.SelectedUserId].Images != null)
         {
-            var image = new Image()
+            foreach (var imageURL in ProgramData.UsersData[ProgramData.SelectedUserId].Images)
             {
-                Source = imageURL == ConstantCustom.TEXT_NO_DATA ? ConstantCustom.URL_NO_MAIN_IMAGE : imageURL ?? ConstantCustom.URL_NO_MAIN_IMAGE,
-                WidthRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем ширину изображени€ в 200 пикселей
-                HeightRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем высоту изображени€ в 150 пиксел
-            };
-            vStackImage.Add(image);
+                var image = new Image()
+                {
+                    Source = imageURL == ConstantCustom.TEXT_NO_DATA ? ConstantCustom.URL_NO_MAIN_IMAGE : imageURL ?? ConstantCustom.URL_NO_MAIN_IMAGE,
+                    WidthRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем ширину изображени€ в 200 пикселей
+                    HeightRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем высоту изображени€ в 150 пиксел
+                };
+                vStackImage.Add(image);
+            }
         }
-
 
         verticalStack.Add(vStackImage);
 
@@ -268,5 +270,11 @@ public class UserProfilePage : ContentPage
     {
         FirebaseAuth.SignOut();
         await Navigation.PopToRootAsync();
+    }
+
+    protected override bool OnBackButtonPressed()
+    {
+        ProgramData.UsersData = FirebaseRealtimeDataBase.GetAllUsers();
+        return false;
     }
 }
