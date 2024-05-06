@@ -28,7 +28,6 @@ class RealtimeDataBaseData {
   static Future<void> readDataFromFirebase() async {
     DatabaseReference databaseReference = FirebaseDatabase.instance.reference();
 
-    // Get the data once
     DatabaseEvent event = await databaseReference.child(Constant.USERS).once();
 
     var data = event.snapshot.value as Map<Object?, Object?>;

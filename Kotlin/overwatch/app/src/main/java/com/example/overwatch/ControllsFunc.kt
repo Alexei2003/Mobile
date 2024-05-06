@@ -28,13 +28,11 @@ object ControllsFunc {
             .height(50.dp),
         uid :String = "",
     ) {
-        // Обновляем URL изображения
         var currentImageUrl by remember { mutableStateOf(imageUrl) }
 
         val painter: Painter = rememberImagePainter(
             data = if(currentImageUrl!= ConstantsCustom.TEXT_NO_DATA) currentImageUrl else ConstantsCustom.URL_NO_MAIN_IMAGE,
             builder = {
-                // Дополнительные настройки, если нужно
             }
         )
 
@@ -52,7 +50,7 @@ object ControllsFunc {
                             currentImageUrl = ConstantsCustom.URL_FAVOURITE
                             user!!.Favourite.set(uid,ConstantsCustom.TEXT_NO_DATA)
                         }
-                        PushUserData(user);
+                        PushUserData(user);//
                     },
                 contentScale = ContentScale.Crop
             )
@@ -70,7 +68,6 @@ object ControllsFunc {
         val database = Firebase.database
         val myRef = database.getReference()
 
-        // Чтение данных один раз
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 try {
@@ -81,7 +78,6 @@ object ControllsFunc {
                         val auth = FirebaseAuth.getInstance()
                         RealtimeDataBaseData.actualUserId = auth.currentUser!!.uid
 
-                        // Переход к следующему окну
                         navigateToNextActivity(currentActivity, nextActivityClass)
                     }
                 } catch (ex: Exception) {

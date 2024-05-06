@@ -49,8 +49,8 @@ class LogActivity : ComponentActivity() {
                     ) {
                         Button(
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
-                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                containerColor = ConstantsCustom.CONTROLL_COLOR,
+                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR
                             ),
                             onClick = {
                                 startActivity(Intent(this@LogActivity, MainActivity::class.java))
@@ -93,7 +93,6 @@ class LogActivity : ComponentActivity() {
                                 contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
                             ),
                             onClick = {
-                                // Вход существующего пользователя
                                 GlobalScope.launch {
                                     val success = signInUserWithEmailAndPassword(email.value, password.value)
                                     if (success) {

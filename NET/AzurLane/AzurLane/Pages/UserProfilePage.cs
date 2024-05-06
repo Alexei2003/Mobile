@@ -42,8 +42,8 @@ public class UserProfilePage : ContentPage
         var mainImage = new Image()
         {
             Source = user.MainImage == ConstantCustom.TEXT_NO_DATA ? ConstantCustom.URL_NO_MAIN_IMAGE : user.MainImage ?? ConstantCustom.URL_NO_MAIN_IMAGE,
-            WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем ширину изображени€ в 200 пикселей
-            HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем высоту изображени€ в 150 пиксел
+            WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f, 
+            HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f, 
         };
         horizontalStack.Add(mainImage);
 
@@ -62,8 +62,8 @@ public class UserProfilePage : ContentPage
             var favouriteImage = new Image()
             {
                 Source = ProgramData.UsersData[ProgramData.ActualUserId].Favourite == null ? ConstantCustom.URL_NO_FAVOURITE : ProgramData.UsersData[ProgramData.ActualUserId].Favourite.ContainsKey(ProgramData.SelectedUserId) ? ConstantCustom.URL_FAVOURITE : ConstantCustom.URL_NO_FAVOURITE,
-                WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем ширину изображени€ в 200 пикселей
-                HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем высоту изображени€ в 150 пиксел
+                WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f,
+                HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f,
                 BindingContext = ProgramData.SelectedUserId,
             };
             var favouriteImageGestureRecognizer = new TapGestureRecognizer();
@@ -75,8 +75,8 @@ public class UserProfilePage : ContentPage
         {
             var spacer = new BoxView()
             {
-                WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем ширину изображени€ в 200 пикселей
-                HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f, // ”станавливаем высоту изображени€ в 150 пиксел
+                WidthRequest = ConstantCustom.IMAGE_SIZE * 1.5f, 
+                HeightRequest = ConstantCustom.IMAGE_SIZE * 1.5f, 
             };
             horizontalStack.Add(spacer);
         }
@@ -230,8 +230,8 @@ public class UserProfilePage : ContentPage
                 var image = new Image()
                 {
                     Source = imageURL == ConstantCustom.TEXT_NO_DATA ? ConstantCustom.URL_NO_MAIN_IMAGE : imageURL ?? ConstantCustom.URL_NO_MAIN_IMAGE,
-                    WidthRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем ширину изображени€ в 200 пикселей
-                    HeightRequest = ConstantCustom.IMAGE_SIZE * 4f, // ”станавливаем высоту изображени€ в 150 пиксел
+                    WidthRequest = ConstantCustom.IMAGE_SIZE * 4f,
+                    HeightRequest = ConstantCustom.IMAGE_SIZE * 4f,
                 };
                 vStackImage.Add(image);
             }

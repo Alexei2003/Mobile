@@ -37,8 +37,8 @@ class MainActivity : ComponentActivity() {
 
                         Button(
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
-                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                containerColor = ConstantsCustom.CONTROLL_COLOR,
+                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR
                             ),
                             onClick = {
                                 startActivity(Intent(this@MainActivity, LogActivity::class.java))
@@ -49,10 +49,10 @@ class MainActivity : ComponentActivity() {
 
                         Button(
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = ConstantsCustom.CONTROLL_COLOR, // Прозрачный фон кнопки
-                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR // Цвет текста кнопки
+                                containerColor = ConstantsCustom.CONTROLL_COLOR,
+                                contentColor = ConstantsCustom.CONTROLL_TEXT_COLOR
                             ),
-                            onClick = {
+                            onClick = {//
                                 startActivity(Intent(this@MainActivity, SignActivity::class.java))
                             }
                         ) {

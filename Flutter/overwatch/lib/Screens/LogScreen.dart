@@ -50,7 +50,7 @@ class LogScreen extends StatelessWidget {
                   if (user != null) {
                     RealtimeDataBaseData.actualUserId = user.uid;
                   }
-
+                  //
                   await RealtimeDataBaseData.readDataFromFirebase();
 
                   Navigator.push(
