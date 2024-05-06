@@ -9,7 +9,7 @@
         "https://a-static.besthdwallpaper.com/overwatch-video-game-tracer-wallpaper-2000x1333-20022_39.jpg"
       ],
       "MainImage": "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/UserImage%2F3F3F3F3F3F3F3F.jpg?alt=media&token=a9bcf16a-1843-49fb-9b83-372547ebe3a6",
-      "Name": "Трейсер1",
+      "Name": "Трейсер",
       "Armor": "0",
       "Age": "28 лет",
       "Nationality": "Англичанка",
@@ -87,6 +87,10 @@
       "Favourite": {
         "4J5m3Kl8EehKPV5LdzxQ0oUqqKG2": "No data"
       },
+
+      "Images": [
+        "https://i.pinimg.com/originals/30/96/c7/3096c7d0fbbf15882c8dca40c3d4cc46.jpg"
+      ],
       "HP": "250",
       "MainImage": "https://firebasestorage.googleapis.com/v0/b/overwatch-95808.appspot.com/o/UserImage%2F3F3F3F3F3F3F.jpg?alt=media&token=d1075b4e-75ff-4a8c-bcf4-9f49a1673d14",
       "Name": "Ангел",

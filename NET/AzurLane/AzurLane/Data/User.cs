@@ -6,8 +6,6 @@
         public string MainImage { get; set; } = null;
         public Dictionary<string, string> Favourite { get; set; } = null;
         public List<string> Images { get; set; } = null;
-
-
         public string Construction { get; set; } = null;
         public string Rarity { get; set; } = null;
         public string Classification { get; set; } = null;
