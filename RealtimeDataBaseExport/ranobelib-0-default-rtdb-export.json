@@ -1,26 +1,26 @@
 {
   "Users": {
     "5p797b6GqDSQvMKo84NaqWD452i1": {
-      "ability": "-",
-      "attack_frequency": "9.60",
-      "attack_power": "78000",
-      "attack_range": "400",
-      "favourite": {
+      "Ability": "-",
+      "Attack_frequency": "9.60",
+      "Attack_power": "78000",
+      "Attack_range": "400",
+      "Favourite": {
         "Fxi8p6YO6XcHtsuxk4GV6zh4gFW2": "No data",
         "RbQ4moPE9MSTHh60WQzjfrgxhUF2": "No data",
         "XHn9jgFJkcbJUHH7O3KBSQL8WhI3": "No data",
         "e9a2vglv2nRLnlaLX6PBJzXy3ti1": "No data"
       },
-      "health": "34500",
-      "images": [
+      "Health": "34500",
+      "Images": [
         "https://static.wikia.nocookie.net/battle-cats/images/f/f8/025_2.png/revision/latest?cb=20160527154051",
         "https://static.wikia.nocookie.net/battle-cats/images/0/01/025_3.png/revision/latest?cb=20160527153639"
       ],
-      "mainImage": "https://static.wikia.nocookie.net/battle-cats/images/2/22/Bahamut_cat.png/revision/latest?cb=20170216145608&path-prefix=ru",
-      "movement_speed": "6",
-      "name": "Bahamut cat",
-      "rarety": "Special",
-      "trait": "-\n"
+      "MainImage": "https://static.wikia.nocookie.net/battle-cats/images/2/22/Bahamut_cat.png/revision/latest?cb=20170216145608&path-prefix=ru",
+      "Movement_speed": "6",
+      "Name": "Bahamut cat",
+      "Rarety": "Special",
+      "Trait": "-\n"
     },
     "A7x3NoErhrRI5KvRFZ6CCSW39Tr2": {
       "Ability": "No data",

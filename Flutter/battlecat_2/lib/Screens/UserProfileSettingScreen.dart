@@ -74,7 +74,7 @@ class UserProfileSettingScreen extends StatelessWidget {
                     ),
                     TextField(
                       controller: raretyController,
-                      decoration: InputDecoration(labelText: 'Illustrator'),
+                      decoration: InputDecoration(labelText: 'Rarety'),
                       obscureText: true,
                     ),
                     TextField(

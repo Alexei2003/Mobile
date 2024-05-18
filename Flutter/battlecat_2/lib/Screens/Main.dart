@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-			style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
+			        style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -45,7 +45,7 @@ class MainScreen extends StatelessWidget {
             ),
             SizedBox(height: 20), // Пространство между кнопками
             ElevatedButton(
-			style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
+			        style: ElevatedButton.styleFrom(backgroundColor: Constant.CONTROLL_COLOR),
               onPressed: () {
                 Navigator.push(
                   context,

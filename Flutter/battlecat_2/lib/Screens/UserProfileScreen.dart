@@ -125,7 +125,7 @@ class _UserProfileScreenState extends State<UserProfileScreen> {
                                   .users[RealtimeDataBaseData.selectedUserId]
                                   ?.movementSpeed ??
                                   Constant.TEXT_NO_DATA),
-                              Text("Illustrator"),
+                              Text("Rarety"),
                               Text(RealtimeDataBaseData
                                   .users[RealtimeDataBaseData.selectedUserId]
                                   ?.rarety ??

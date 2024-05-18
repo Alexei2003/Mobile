@@ -10,5 +10,5 @@ class Constant {
   static const String URL_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/favourite.png?alt=media&token=2bc1549f-45aa-4f8a-ba92-ca9fde6b6096";
   static const String URL_NO_FAVOURITE = "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/not_favourite.png?alt=media&token=669aa245-9593-4292-8418-7f64043c06a4";
 
-  static const CONTROLL_COLOR = Colors.grey ;
+  static const CONTROLL_COLOR = Colors.white ;
 }
