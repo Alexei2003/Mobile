@@ -1,0 +1,179 @@
+{
+  "Users": {
+    "5p797b6GqDSQvMKo84NaqWD452i1": {
+      "Ability": "-",
+      "Attack_frequency": "9.60",
+      "Attack_power": "78000",
+      "Attack_range": "400",
+      "Favourite": {
+        "Fxi8p6YO6XcHtsuxk4GV6zh4gFW2": "No data",
+        "RbQ4moPE9MSTHh60WQzjfrgxhUF2": "No data",
+        "XHn9jgFJkcbJUHH7O3KBSQL8WhI3": "No data",
+        "e9a2vglv2nRLnlaLX6PBJzXy3ti1": "No data"
+      },
+      "Health": "34500",
+      "Images": [
+        "https://static.wikia.nocookie.net/battle-cats/images/f/f8/025_2.png/revision/latest?cb=20160527154051",
+        "https://static.wikia.nocookie.net/battle-cats/images/0/01/025_3.png/revision/latest?cb=20160527153639"
+      ],
+      "MainImage": "https://static.wikia.nocookie.net/battle-cats/images/2/22/Bahamut_cat.png/revision/latest?cb=20170216145608&path-prefix=ru",
+      "Movement_speed": "6",
+      "Name": "Bahamut cat",
+      "Rarety": "Special",
+      "Trait": "-\n"
+    },
+    "A7x3NoErhrRI5KvRFZ6CCSW39Tr2": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Movement speed": "No data",
+      "Name": "Example2",
+      "Rarety": "No data",
+      "Trait": "No data"
+    },
+    "Fxi8p6YO6XcHtsuxk4GV6zh4gFW2": {
+      "Ability": "-",
+      "Attack frequency": "No data",
+      "Attack power": "90",
+      "Attack range": "110",
+      "Favourite": {
+        "RbQ4moPE9MSTHh60WQzjfrgxhUF2": "No data",
+        "bHBiqNFOg9gHyeWLhxSjz4ytMI83": "No data"
+      },
+      "Health": "17800",
+      "Images": [
+        "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/Tank_cat_1.png?alt=media&token=ab67fe91-c3ed-4c57-b9e0-6c3c7402d758",
+        "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/Tank_cat_2.png?alt=media&token=1f236482-27d4-4ec3-ab94-efb5e55f1d4e",
+        "https://static.wikia.nocookie.net/battle-cats/images/1/18/Black_Betakkuma.JPG/revision/latest?cb=20180729185018&path-prefix=ru"
+      ],
+      "MainImage": "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/Tank_cat_0.png?alt=media&token=f19eda7e-e8c1-4e5c-be84-5750ff344410",
+      "Movement speed": "8",
+      "Name": "Tank cat",
+      "Rarety": "Normal",
+      "Trait": "-"
+    },
+    "GekGZeWjzofHtPrjLMW7j34p9c63": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Movement speed": "No data",
+      "Name": "Example3",
+      "Rarety": "No data",
+      "Trait": "No data"
+    },
+    "RbQ4moPE9MSTHh60WQzjfrgxhUF2": {
+      "Ability": "Strong",
+      "Attack frequency": "0.9",
+      "Attack power": "1112",
+      "Attack range": "150",
+      "Attack_frequency": "0.8",
+      "Favourite": {
+        "Fxi8p6YO6XcHtsuxk4GV6zh4gFW2": "No data"
+      },
+      "Health": "8900",
+      "Images": [
+        "https://static.wikia.nocookie.net/battle-cats/images/4/44/002_2.png/revision/latest?cb=20150602174942",
+        "https://static.wikia.nocookie.net/battle-cats/images/0/05/002_3.png/revision/latest?cb=20150602175017"
+      ],
+      "MainImage": "https://firebasestorage.googleapis.com/v0/b/ranobelib-0.appspot.com/o/Axe_Cat_render.png?alt=media&token=824d40bc-35a1-4315-9ee1-2680c9730359",
+      "Movement speed": "12",
+      "Name": "Axe",
+      "Rarety": "Normal",
+      "Trait": "Red"
+    },
+    "VSEM0nj4MffxUGluPyJ9qz0CC3V2": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Movement speed": "No data",
+      "Name": "Example5",
+      "Rarety": "No data",
+      "Trait": "No data"
+    },
+    "XHn9jgFJkcbJUHH7O3KBSQL8WhI3": {
+      "Ability": "Massive damage",
+      "Attack frequency": "4.03",
+      "Attack power": "12155",
+      "Attack range": "220",
+      "Health": "26350",
+      "Images": [
+        "https://static.wikia.nocookie.net/battle-cats/images/0/06/151_2.png/revision/latest?cb=20151212204834",
+        "https://static.wikia.nocookie.net/battle-cats/images/7/70/151_3.png/revision/latest?cb=20200512083411"
+      ],
+      "MainImage": "https://static.wikia.nocookie.net/battle-cats/images/1/10/151_1.png/revision/latest?cb=20151212204818",
+      "Movement speed": "No data",
+      "Name": "Weightlifter Cat",
+      "Rarety": "Super rare",
+      "Trait": "No data"
+    },
+    "XXeYs4iFBtXMBCnTa5hJPMRqhE33": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Movement speed": "No data",
+      "Name": "Example1",
+      "Rarety": "No data",
+      "Trait": "No data"
+    },
+    "aOKo0amQsDeBR7KjVC6pg4HVp2f1": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Movement speed": "No data",
+      "Name": "Example4",
+      "Rarety": "No data",
+      "Trait": "No data"
+    },
+    "cXb0B3oHmHSXVBC20Nn6h5ChvxT2": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Illustrator": "No data",
+      "Movement Speed": "No data",
+      "Name": "1",
+      "Trait": "No data"
+    },
+    "e9a2vglv2nRLnlaLX6PBJzXy3ti1": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Health": "No data",
+      "Images": [
+        "https://static.wikia.nocookie.net/battle-cats/images/2/25/535_2.png/revision/latest?cb=20200330225841"
+      ],
+      "MainImage": "https://static.wikia.nocookie.net/battle-cats/images/4/42/535_1.png/revision/latest?cb=20200330225833",
+      "Movement speed": "No data",
+      "Name": "Hatsune miku",
+      "Rarety": "Uber rare",
+      "Trait": "No data"
+    },
+    "eysoVhwHeVVlYdDKGj24LyYpLbb2": {
+      "Ability": "No data",
+      "Attack frequency": "No data",
+      "Attack power": "No data",
+      "Attack range": "No data",
+      "Favourite": {
+        "A7x3NoErhrRI5KvRFZ6CCSW39Tr2": "No data",
+        "RbQ4moPE9MSTHh60WQzjfrgxhUF2": "No data"
+      },
+      "Health": "20000",
+      "Movement speed": "No data",
+      "Name": "Cat example",
+      "Rarety": "Special",
+      "Trait": "No data"
+    }
+  }
+}

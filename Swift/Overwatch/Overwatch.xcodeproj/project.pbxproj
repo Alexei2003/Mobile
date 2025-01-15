@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B2FDC9DFDCEF8E555269BFF /* Pods_Overwatch_OverwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9F886E2C83BCBB43AADB83 /* Pods_Overwatch_OverwatchUITests.framework */; };
+		601C30DC5D5F48874A27C3ED /* Pods_OverwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3442709D815CECA29018116E /* Pods_OverwatchTests.framework */; };
+		825AC8C92BD02BB2002E56FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AC8C82BD02BB2002E56FA /* AppDelegate.swift */; };
+		825AC8CB2BD02BB3002E56FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AC8CA2BD02BB3002E56FA /* SceneDelegate.swift */; };
+		825AC8CD2BD02BB3002E56FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AC8CC2BD02BB3002E56FA /* ContentView.swift */; };
+		825AC8CF2BD02BB9002E56FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825AC8CE2BD02BB9002E56FA /* Assets.xcassets */; };
+		825AC8D22BD02BB9002E56FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825AC8D12BD02BB9002E56FA /* Preview Assets.xcassets */; };
+		825AC8D52BD02BB9002E56FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825AC8D32BD02BB9002E56FA /* LaunchScreen.storyboard */; };
+		825AC8E02BD02BB9002E56FA /* OverwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AC8DF2BD02BB9002E56FA /* OverwatchTests.swift */; };
+		825AC8EB2BD02BB9002E56FA /* OverwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AC8EA2BD02BB9002E56FA /* OverwatchUITests.swift */; };
+		825AC9352BD0357E002E56FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 825AC9342BD0357E002E56FA /* GoogleService-Info.plist */; };
+		E5520DEF5041A8AC479F690F /* Pods_Overwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2870A88D94D5C7BD65C6175C /* Pods_Overwatch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		825AC8DC2BD02BB9002E56FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 825AC8BD2BD02BB2002E56FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 825AC8C42BD02BB2002E56FA;
+			remoteInfo = Overwatch;
+		};
+		825AC8E72BD02BB9002E56FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 825AC8BD2BD02BB2002E56FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 825AC8C42BD02BB2002E56FA;
+			remoteInfo = Overwatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10EF76EFB40D4B2A55AE5676 /* Pods-OverwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2870A88D94D5C7BD65C6175C /* Pods_Overwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3442709D815CECA29018116E /* Pods_OverwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		825AC8C52BD02BB2002E56FA /* Overwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		825AC8C82BD02BB2002E56FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		825AC8CA2BD02BB3002E56FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		825AC8CC2BD02BB3002E56FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		825AC8CE2BD02BB9002E56FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		825AC8D12BD02BB9002E56FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		825AC8D42BD02BB9002E56FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		825AC8D62BD02BB9002E56FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825AC8DB2BD02BB9002E56FA /* OverwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		825AC8DF2BD02BB9002E56FA /* OverwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchTests.swift; sourceTree = "<group>"; };
+		825AC8E12BD02BB9002E56FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825AC8E62BD02BB9002E56FA /* OverwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		825AC8EA2BD02BB9002E56FA /* OverwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchUITests.swift; sourceTree = "<group>"; };
+		825AC8EC2BD02BB9002E56FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825AC9342BD0357E002E56FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		86D6E2E57832C3CED8727A0B /* Pods-Overwatch-OverwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-OverwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-Overwatch-OverwatchUITests/Pods-Overwatch-OverwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9074C534717B7C33E73B4191 /* Pods-OverwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverwatchTests.release.xcconfig"; path = "Target Support Files/Pods-OverwatchTests/Pods-OverwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		9772923C7F841BFC12BABFBF /* Pods-Overwatch-OverwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch-OverwatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch-OverwatchUITests/Pods-Overwatch-OverwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1950038361E463BFD228F56 /* Pods-Overwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.release.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.release.xcconfig"; sourceTree = "<group>"; };
+		E754C79F39292B15C59F002D /* Pods-Overwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Overwatch.debug.xcconfig"; path = "Target Support Files/Pods-Overwatch/Pods-Overwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		FB9F886E2C83BCBB43AADB83 /* Pods_Overwatch_OverwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Overwatch_OverwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		825AC8C22BD02BB2002E56FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5520DEF5041A8AC479F690F /* Pods_Overwatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8D82BD02BB9002E56FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601C30DC5D5F48874A27C3ED /* Pods_OverwatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8E32BD02BB9002E56FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2FDC9DFDCEF8E555269BFF /* Pods_Overwatch_OverwatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E98B4994A4543D9F59F0271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2870A88D94D5C7BD65C6175C /* Pods_Overwatch.framework */,
+				FB9F886E2C83BCBB43AADB83 /* Pods_Overwatch_OverwatchUITests.framework */,
+				3442709D815CECA29018116E /* Pods_OverwatchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A4C93BEFACCFDD8909C12E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E754C79F39292B15C59F002D /* Pods-Overwatch.debug.xcconfig */,
+				D1950038361E463BFD228F56 /* Pods-Overwatch.release.xcconfig */,
+				9772923C7F841BFC12BABFBF /* Pods-Overwatch-OverwatchUITests.debug.xcconfig */,
+				86D6E2E57832C3CED8727A0B /* Pods-Overwatch-OverwatchUITests.release.xcconfig */,
+				10EF76EFB40D4B2A55AE5676 /* Pods-OverwatchTests.debug.xcconfig */,
+				9074C534717B7C33E73B4191 /* Pods-OverwatchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		825AC8BC2BD02BB2002E56FA = {
+			isa = PBXGroup;
+			children = (
+				825AC8C72BD02BB2002E56FA /* Overwatch */,
+				825AC8DE2BD02BB9002E56FA /* OverwatchTests */,
+				825AC8E92BD02BB9002E56FA /* OverwatchUITests */,
+				825AC8C62BD02BB2002E56FA /* Products */,
+				6A4C93BEFACCFDD8909C12E4 /* Pods */,
+				0E98B4994A4543D9F59F0271 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		825AC8C62BD02BB2002E56FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				825AC8C52BD02BB2002E56FA /* Overwatch.app */,
+				825AC8DB2BD02BB9002E56FA /* OverwatchTests.xctest */,
+				825AC8E62BD02BB9002E56FA /* OverwatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		825AC8C72BD02BB2002E56FA /* Overwatch */ = {
+			isa = PBXGroup;
+			children = (
+				825AC9342BD0357E002E56FA /* GoogleService-Info.plist */,
+				825AC8C82BD02BB2002E56FA /* AppDelegate.swift */,
+				825AC8CA2BD02BB3002E56FA /* SceneDelegate.swift */,
+				825AC8CC2BD02BB3002E56FA /* ContentView.swift */,
+				825AC8CE2BD02BB9002E56FA /* Assets.xcassets */,
+				825AC8D32BD02BB9002E56FA /* LaunchScreen.storyboard */,
+				825AC8D62BD02BB9002E56FA /* Info.plist */,
+				825AC8D02BD02BB9002E56FA /* Preview Content */,
+			);
+			path = Overwatch;
+			sourceTree = "<group>";
+		};
+		825AC8D02BD02BB9002E56FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				825AC8D12BD02BB9002E56FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		825AC8DE2BD02BB9002E56FA /* OverwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				825AC8DF2BD02BB9002E56FA /* OverwatchTests.swift */,
+				825AC8E12BD02BB9002E56FA /* Info.plist */,
+			);
+			path = OverwatchTests;
+			sourceTree = "<group>";
+		};
+		825AC8E92BD02BB9002E56FA /* OverwatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				825AC8EA2BD02BB9002E56FA /* OverwatchUITests.swift */,
+				825AC8EC2BD02BB9002E56FA /* Info.plist */,
+			);
+			path = OverwatchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		825AC8C42BD02BB2002E56FA /* Overwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825AC8EF2BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "Overwatch" */;
+			buildPhases = (
+				D47F44C7E090119D73781BB5 /* [CP] Check Pods Manifest.lock */,
+				825AC8C12BD02BB2002E56FA /* Sources */,
+				825AC8C22BD02BB2002E56FA /* Frameworks */,
+				825AC8C32BD02BB2002E56FA /* Resources */,
+				AB518BA6607B70FAC13A00AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overwatch;
+			productName = Overwatch;
+			productReference = 825AC8C52BD02BB2002E56FA /* Overwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		825AC8DA2BD02BB9002E56FA /* OverwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825AC8F22BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "OverwatchTests" */;
+			buildPhases = (
+				B42E373C9546ECF52CE9582D /* [CP] Check Pods Manifest.lock */,
+				825AC8D72BD02BB9002E56FA /* Sources */,
+				825AC8D82BD02BB9002E56FA /* Frameworks */,
+				825AC8D92BD02BB9002E56FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				825AC8DD2BD02BB9002E56FA /* PBXTargetDependency */,
+			);
+			name = OverwatchTests;
+			productName = OverwatchTests;
+			productReference = 825AC8DB2BD02BB9002E56FA /* OverwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		825AC8E52BD02BB9002E56FA /* OverwatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825AC8F52BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "OverwatchUITests" */;
+			buildPhases = (
+				4BA4E559A7C0D280B7E73C04 /* [CP] Check Pods Manifest.lock */,
+				825AC8E22BD02BB9002E56FA /* Sources */,
+				825AC8E32BD02BB9002E56FA /* Frameworks */,
+				825AC8E42BD02BB9002E56FA /* Resources */,
+				93EC0A38D004AA1DB48611F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				825AC8E82BD02BB9002E56FA /* PBXTargetDependency */,
+			);
+			name = OverwatchUITests;
+			productName = OverwatchUITests;
+			productReference = 825AC8E62BD02BB9002E56FA /* OverwatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		825AC8BD2BD02BB2002E56FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Prinz Eugen";
+				TargetAttributes = {
+					825AC8C42BD02BB2002E56FA = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					825AC8DA2BD02BB9002E56FA = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 825AC8C42BD02BB2002E56FA;
+					};
+					825AC8E52BD02BB9002E56FA = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 825AC8C42BD02BB2002E56FA;
+					};
+				};
+			};
+			buildConfigurationList = 825AC8C02BD02BB2002E56FA /* Build configuration list for PBXProject "Overwatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 825AC8BC2BD02BB2002E56FA;
+			productRefGroup = 825AC8C62BD02BB2002E56FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				825AC8C42BD02BB2002E56FA /* Overwatch */,
+				825AC8DA2BD02BB9002E56FA /* OverwatchTests */,
+				825AC8E52BD02BB9002E56FA /* OverwatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		825AC8C32BD02BB2002E56FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825AC8D52BD02BB9002E56FA /* LaunchScreen.storyboard in Resources */,
+				825AC9352BD0357E002E56FA /* GoogleService-Info.plist in Resources */,
+				825AC8D22BD02BB9002E56FA /* Preview Assets.xcassets in Resources */,
+				825AC8CF2BD02BB9002E56FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8D92BD02BB9002E56FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8E42BD02BB9002E56FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BA4E559A7C0D280B7E73C04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Overwatch-OverwatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93EC0A38D004AA1DB48611F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Overwatch-OverwatchUITests/Pods-Overwatch-OverwatchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Overwatch-OverwatchUITests/Pods-Overwatch-OverwatchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Overwatch-OverwatchUITests/Pods-Overwatch-OverwatchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB518BA6607B70FAC13A00AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Overwatch/Pods-Overwatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Overwatch/Pods-Overwatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Overwatch/Pods-Overwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42E373C9546ECF52CE9582D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47F44C7E090119D73781BB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Overwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		825AC8C12BD02BB2002E56FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825AC8C92BD02BB2002E56FA /* AppDelegate.swift in Sources */,
+				825AC8CB2BD02BB3002E56FA /* SceneDelegate.swift in Sources */,
+				825AC8CD2BD02BB3002E56FA /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8D72BD02BB9002E56FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825AC8E02BD02BB9002E56FA /* OverwatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		825AC8E22BD02BB9002E56FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825AC8EB2BD02BB9002E56FA /* OverwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		825AC8DD2BD02BB9002E56FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 825AC8C42BD02BB2002E56FA /* Overwatch */;
+			targetProxy = 825AC8DC2BD02BB9002E56FA /* PBXContainerItemProxy */;
+		};
+		825AC8E82BD02BB9002E56FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 825AC8C42BD02BB2002E56FA /* Overwatch */;
+			targetProxy = 825AC8E72BD02BB9002E56FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		825AC8D32BD02BB9002E56FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				825AC8D42BD02BB9002E56FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		825AC8ED2BD02BB9002E56FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		825AC8EE2BD02BB9002E56FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		825AC8F02BD02BB9002E56FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E754C79F39292B15C59F002D /* Pods-Overwatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Overwatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Overwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.Overwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		825AC8F12BD02BB9002E56FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1950038361E463BFD228F56 /* Pods-Overwatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Overwatch/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Overwatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.Overwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		825AC8F32BD02BB9002E56FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EF76EFB40D4B2A55AE5676 /* Pods-OverwatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.OverwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch.app/Overwatch";
+			};
+			name = Debug;
+		};
+		825AC8F42BD02BB9002E56FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9074C534717B7C33E73B4191 /* Pods-OverwatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverwatchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.OverwatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch.app/Overwatch";
+			};
+			name = Release;
+		};
+		825AC8F62BD02BB9002E56FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9772923C7F841BFC12BABFBF /* Pods-Overwatch-OverwatchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.OverwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Overwatch;
+			};
+			name = Debug;
+		};
+		825AC8F72BD02BB9002E56FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D6E2E57832C3CED8727A0B /* Pods-Overwatch-OverwatchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OverwatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = potato.OverwatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Overwatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		825AC8C02BD02BB2002E56FA /* Build configuration list for PBXProject "Overwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825AC8ED2BD02BB9002E56FA /* Debug */,
+				825AC8EE2BD02BB9002E56FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825AC8EF2BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "Overwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825AC8F02BD02BB9002E56FA /* Debug */,
+				825AC8F12BD02BB9002E56FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825AC8F22BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "OverwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825AC8F32BD02BB9002E56FA /* Debug */,
+				825AC8F42BD02BB9002E56FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		825AC8F52BD02BB9002E56FA /* Build configuration list for PBXNativeTarget "OverwatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825AC8F62BD02BB9002E56FA /* Debug */,
+				825AC8F72BD02BB9002E56FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 825AC8BD2BD02BB2002E56FA /* Project object */;
+}

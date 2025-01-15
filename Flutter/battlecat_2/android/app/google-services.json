@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "425864386246",
+    "firebase_url": "https://ranobelib-0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ranobelib-0",
+    "storage_bucket": "ranobelib-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425864386246:android:4e147d636df0a37e4729c7",
+        "android_client_info": {
+          "package_name": "com.OOO.BattleCats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB2Gsj_fcMYskkWfO2wVyk7nlMx5_Op8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425864386246:android:9096acbfab79a7e34729c7",
+        "android_client_info": {
+          "package_name": "com.example.battlecat_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB2Gsj_fcMYskkWfO2wVyk7nlMx5_Op8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

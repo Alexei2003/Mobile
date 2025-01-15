@@ -1,0 +1,12 @@
+# Mobile-stat
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Alexei2003_Mobile&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Alexei2003_Mobile)
